@@ -1,63 +1,68 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
 }
+
+main {
+  width: 70vw;
+  max-width: 1000px;
+  height: auto;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3, h4 {
+  color: #333;
+  margin: 10px 0;
+}
+
 .image-Container {
   display: flex;
   align-items: center;
-  gap: 20%;
+  gap: 20px;
   justify-content: center;
-
+  margin-bottom: 20px;
 }
+
 .image {
-  width: 10vh;
-  height: 4vw;
-  border-radius: 100%;
-}
-main {
-  width: 70vw;
-  height: 100vh;
-  margin: auto;
-  border: 2px solid gray;
-  border-radius: 10px;
-  padding: 2px;
-}
-h1,
-h3,
-h4 {
-  color: #333;
-  margin: 2px 0;
-}
-
-.information,
-.summary,
-.skills {
-  text-align: start;
-  margin: 2px auto;
-  flex-wrap: wrap;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
 }
 
 .information {
   display: flex;
-  gap: 5px;
-  margin: 10px 0;
+  gap: 10px;
   justify-content: center;
+  margin: 20px 0;
+  text-align: center;
 }
+
+.summary, .skills, .experience {
+  margin: 20px 0;
+  padding: 10px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
-}
-th,
-td {
-  padding: 10px;
-  border: 1px solid #ccc;
-  text-align: left;
+  margin-top: 20px;
 }
 
-h3,
-h4 {
-  margin-top: 0;
+th, td {
+  padding: 15px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
 
 ul {
@@ -67,6 +72,8 @@ ul {
 
 li {
   margin: 5px 0;
+  padding: 5px;
+  transition: background-color 0.3s ease;
 }
 
 li:hover {
@@ -76,6 +83,7 @@ li:hover {
 a {
   color: #0077cc;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
@@ -83,28 +91,54 @@ a:hover {
 }
 
 hr {
-  border: 0;
+  margin: 20px 0;
+  border: none;
   border-top: 1px solid #ccc;
-  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  main {
+    width: 90vw;
+    padding: 10px;
+  }
+
+  .image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .image-Container h1 {
+    font-size: 22px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  .information {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .image-Container {
-    display: flex;
-    gap: 30px;
+    gap: 10px;
   }
-  .image-Container h1 {
-    font-size: 25px;
-  }
+
   .image {
-    width: 15vw;
-    height: 10vh;
-    margin-right: 5px;
+    width: 60px;
+    height: 60px;
   }
 
   main {
     width: 100%;
-    padding: 4px;
+    padding: 15px;
     border: none;
+    box-shadow: none;
+  }
+
+  th, td {
+    padding: 8px;
   }
 }
