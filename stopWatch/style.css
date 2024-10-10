@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://img.freepik.com/free-photo/watercolor-light-steel-blue-wallpaper-image_53876-94665.jpg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+span {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 15px;
+
+  min-width: 60px;
+  margin: 0 10px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin: 15px 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#startBtn {
+  background-color: #3ac03a;
+}
+
+#resetBtn {
+  background-color: #e74c3c;
+}
+
+#stopBtn {
+  background-color: #c0392b;
+}
+
+#startBtn:hover {
+  background-color: #2e8b2e;
+}
+
+#resetBtn:hover {
+  background-color: #d43f2e;
+}
+
+#stopBtn:hover {
+  background-color: #992d22;
+}
+
+#previousRecords {
+  margin-top: 4px;
+  text-align: center;
+  height: 100%;
+  overflow-y: auto;
+}
+
+#previousRecords h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+#recordsList {
+  list-style: none;
+  padding: 0;
+}
+
+#recordsList li {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
