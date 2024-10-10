@@ -1,0 +1,1 @@
+"This project is a resume template built with HTML and CSS, designed to showcase skills, education, and experience in a clean layout. It includes sections for personal information, a professional summary, experience, skills, and education, presenting a comprehensive view of qualifications in a visually appealing way."

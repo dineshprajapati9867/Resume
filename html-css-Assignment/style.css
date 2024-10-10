@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* General Styles */
+=======
+
+>>>>>>> 3353ea89b028f8c5cbb2c5dd800b337d12f7f72e
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -96,7 +100,10 @@ hr {
   border-top: 1px solid #ccc;
 }
 
+<<<<<<< HEAD
 /* Responsive Design */
+=======
+>>>>>>> 3353ea89b028f8c5cbb2c5dd800b337d12f7f72e
 @media only screen and (max-width: 768px) {
   main {
     width: 90vw;
