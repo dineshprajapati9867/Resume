@@ -15,6 +15,8 @@ startBtn.addEventListener("click", function () {
   if (!timer) {
     timer = true;
     interval = setInterval(stopWatch, 10);
+    console.log(interval);
+    
   }
   console.log("start");
 });

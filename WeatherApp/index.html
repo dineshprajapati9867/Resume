@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+</head>
+
+<body
+  class="bg-[url('https://st2.depositphotos.com/5078157/12200/i/450/depositphotos_122003512-stock-photo-cloudy-blue-sky-abstract-background.jpg')] bg-cover bg-center">
+  <main class="flex items-center justify-center h-screen">
+    <div
+      class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md text-center border border-gray-300  lg:mt-10 mt-0 h-screen bg-gradient-to-t from-blue-400 to-transparent ">
+      <h1 class="lg:text-4xl text-3xl mb-6 font-semibold">Weather Application</h1>
+      <form class="mb-6 flex  gap-2 justify-center items-center flex-wrap">
+        <div class="relative ">
+
+          <select name="state" id="state"
+            class="block   bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded-md focus:border-blue-500  ">
+            <option hidden >Select Your City</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="kolkata">Kolkata</option>
+            <option value="bangalore">Bangalore</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="chandigarh">Chandigarh</option>
+            <option value="chennai">Chennai</option>
+            <option value="Lucknow">Lucknow</option>
+          </select>
+        </div>
+        <button type="submit"
+          class="min-w-[40%] bg-blue-500 text-white py-3 px-4 rounded-md hover:bg-blue-600 transition duration-300"
+          id="searchBtn">
+          Get Weather
+        </button>
+      </form>
+
+      <div
+        class="weather-info text-2xl font-semibold text-gray-600 text-center flex justify-center items-center flex-col ">
+        <img class=" lg:mb-4 lg:w-[10vw] w-[30vw] " id="weatherImg">
+        <h3 id="condition"></h3>
+        <h3 id="temperature_c"></h3>
+        <h3 id="temperature_f"></h3>
+        <h3 id="cityName"></h3>
+        <h3 id="region"></h3>
+        <h3 id="country"></h3>
+        <h3 id="last_updated"></h3>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
